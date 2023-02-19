@@ -15,7 +15,7 @@ localbuild $ cp -R themes/hugo-book/exampleSite/content.en/* ./content
 
 ## push source (hugo project) repo
 localbuild $ git remote add origin https://github.com/smjune/localbuild.git  
-loalbuild $ git add .  
+localbuild $ git add .  
 localbuild $ git commit -m 'initiate project'  
 localbuild $ git push origin main  
 
@@ -31,11 +31,15 @@ localbuild/public $ git add .
 localbuild/public $ git commit -m 'first deploy'
 localbuild/public $ git push 
 localbuild/public $ cd ..
+localbuild $
 
-## update pages
-## build
-## add/commit/push public folder
-## add/commit/push hugo project  ( echo 'public/' >> .gitignore )
+## workflow
+1. update pages
+2. build on                      (localbuild)
+3. add/commit/push public folder (localbuild/public)
+4. add/commit/push hugo project  (localbuild) ( echo 'public/' >> .gitignore )
+
 
 ```
 
+[public submodule 오류](https://stackoverflow.com/questions/12218420/add-a-submodule-which-cant-be-removed-from-the-index/39189599)
